@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YXH.webapi", "YXH.webapi\YXH.webapi.csproj", "{8AF83E67-90B9-4A38-831F-5CE26A9FFB42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YXH.Entities", "YXH.Entities\YXH.Entities.csproj", "{805665CB-027C-4546-AAC6-1CEA016DBFB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YXH.Repository", "YXH.Repository\YXH.Repository.csproj", "{37D802AF-121A-46C5-803C-A7933C5E636A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YXH.Services", "YXH.Services\YXH.Services.csproj", "{E1532426-0EC9-4B8B-BFA3-28F74B5C5413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YXH.Test", "YXH.Test\YXH.Test.csproj", "{5F7E3D37-89B1-46AA-8271-8B04E1A556FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YSH.Framework", "YSH.Framework\YSH.Framework.csproj", "{D2E88940-DB6D-4F04-9145-A543F850DB21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AF83E67-90B9-4A38-831F-5CE26A9FFB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF83E67-90B9-4A38-831F-5CE26A9FFB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF83E67-90B9-4A38-831F-5CE26A9FFB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF83E67-90B9-4A38-831F-5CE26A9FFB42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805665CB-027C-4546-AAC6-1CEA016DBFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805665CB-027C-4546-AAC6-1CEA016DBFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805665CB-027C-4546-AAC6-1CEA016DBFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805665CB-027C-4546-AAC6-1CEA016DBFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D802AF-121A-46C5-803C-A7933C5E636A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D802AF-121A-46C5-803C-A7933C5E636A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D802AF-121A-46C5-803C-A7933C5E636A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D802AF-121A-46C5-803C-A7933C5E636A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1532426-0EC9-4B8B-BFA3-28F74B5C5413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1532426-0EC9-4B8B-BFA3-28F74B5C5413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1532426-0EC9-4B8B-BFA3-28F74B5C5413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1532426-0EC9-4B8B-BFA3-28F74B5C5413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F7E3D37-89B1-46AA-8271-8B04E1A556FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F7E3D37-89B1-46AA-8271-8B04E1A556FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F7E3D37-89B1-46AA-8271-8B04E1A556FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F7E3D37-89B1-46AA-8271-8B04E1A556FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E88940-DB6D-4F04-9145-A543F850DB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E88940-DB6D-4F04-9145-A543F850DB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E88940-DB6D-4F04-9145-A543F850DB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E88940-DB6D-4F04-9145-A543F850DB21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {193E19BB-0A39-4CBC-ADE5-B4D5BD1912D2}
+	EndGlobalSection
+EndGlobal

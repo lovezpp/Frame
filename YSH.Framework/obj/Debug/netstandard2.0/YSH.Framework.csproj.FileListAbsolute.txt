@@ -1,0 +1,9 @@
+E:\Demo\YXH.webapi\YSH.Framework\bin\Debug\netstandard2.0\YSH.Framework.deps.json
+E:\Demo\YXH.webapi\YSH.Framework\bin\Debug\netstandard2.0\YSH.Framework.dll
+E:\Demo\YXH.webapi\YSH.Framework\obj\Debug\netstandard2.0\YSH.Framework.AssemblyInfoInputs.cache
+E:\Demo\YXH.webapi\YSH.Framework\obj\Debug\netstandard2.0\YSH.Framework.AssemblyInfo.cs
+E:\Demo\YXH.webapi\YSH.Framework\obj\Debug\netstandard2.0\YSH.Framework.csprojAssemblyReference.cache
+E:\Demo\YXH.webapi\YSH.Framework\bin\Debug\netstandard2.0\YSH.Framework.pdb
+E:\Demo\YXH.webapi\YSH.Framework\obj\Debug\netstandard2.0\YSH.Framework.dll
+E:\Demo\YXH.webapi\YSH.Framework\obj\Debug\netstandard2.0\YSH.Framework.pdb
+E:\Demo\YXH.webapi\YSH.Framework\obj\Debug\netstandard2.0\YSH.Framework.csproj.CoreCompileInputs.cache

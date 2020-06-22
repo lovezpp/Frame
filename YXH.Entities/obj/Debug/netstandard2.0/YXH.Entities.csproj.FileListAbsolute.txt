@@ -1,0 +1,9 @@
+E:\Demo\YXH.webapi\YXH.Entities\bin\Debug\netstandard2.0\YXH.Entities.deps.json
+E:\Demo\YXH.webapi\YXH.Entities\bin\Debug\netstandard2.0\YXH.Entities.dll
+E:\Demo\YXH.webapi\YXH.Entities\obj\Debug\netstandard2.0\YXH.Entities.csprojAssemblyReference.cache
+E:\Demo\YXH.webapi\YXH.Entities\obj\Debug\netstandard2.0\YXH.Entities.AssemblyInfoInputs.cache
+E:\Demo\YXH.webapi\YXH.Entities\obj\Debug\netstandard2.0\YXH.Entities.AssemblyInfo.cs
+E:\Demo\YXH.webapi\YXH.Entities\bin\Debug\netstandard2.0\YXH.Entities.pdb
+E:\Demo\YXH.webapi\YXH.Entities\obj\Debug\netstandard2.0\YXH.Entities.csproj.CoreCompileInputs.cache
+E:\Demo\YXH.webapi\YXH.Entities\obj\Debug\netstandard2.0\YXH.Entities.dll
+E:\Demo\YXH.webapi\YXH.Entities\obj\Debug\netstandard2.0\YXH.Entities.pdb

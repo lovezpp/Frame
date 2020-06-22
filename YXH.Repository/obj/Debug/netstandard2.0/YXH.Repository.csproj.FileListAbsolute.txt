@@ -1,0 +1,12 @@
+E:\Demo\YXH.webapi\YXH.Repository\bin\Debug\netstandard2.0\YXH.Entities.dll
+E:\Demo\YXH.webapi\YXH.Repository\obj\Debug\netstandard2.0\YXH.Repository.csprojAssemblyReference.cache
+E:\Demo\YXH.webapi\YXH.Repository\obj\Debug\netstandard2.0\YXH.Repository.AssemblyInfoInputs.cache
+E:\Demo\YXH.webapi\YXH.Repository\obj\Debug\netstandard2.0\YXH.Repository.AssemblyInfo.cs
+E:\Demo\YXH.webapi\YXH.Repository\bin\Debug\netstandard2.0\YXH.Repository.deps.json
+E:\Demo\YXH.webapi\YXH.Repository\bin\Debug\netstandard2.0\YXH.Repository.dll
+E:\Demo\YXH.webapi\YXH.Repository\bin\Debug\netstandard2.0\YXH.Repository.pdb
+E:\Demo\YXH.webapi\YXH.Repository\bin\Debug\netstandard2.0\YXH.Entities.pdb
+E:\Demo\YXH.webapi\YXH.Repository\obj\Debug\netstandard2.0\YXH.Repository.csproj.CoreCompileInputs.cache
+E:\Demo\YXH.webapi\YXH.Repository\obj\Debug\netstandard2.0\YXH.Repository.csproj.CopyComplete
+E:\Demo\YXH.webapi\YXH.Repository\obj\Debug\netstandard2.0\YXH.Repository.dll
+E:\Demo\YXH.webapi\YXH.Repository\obj\Debug\netstandard2.0\YXH.Repository.pdb
