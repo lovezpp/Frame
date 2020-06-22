@@ -1,7 +1,4 @@
-﻿using ComInfrastructure.Commom.Jwt;
-using ComInfrastructure.Commom.Jwt.IService;
-using ComInfrastructure.Commom.Jwt.Service;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using System;
 using System.Collections.Generic;
@@ -75,22 +72,22 @@ namespace YXH.webapi.Controllers
         /// </summary>
         /// <param name="tokenData">是否获取redis数据</param>
         /// <returns></returns>
-        private JWTDecryptData GetJWT(bool tokenData)
-        {
-            JWTDecryptData result = new JWTDecryptData();
-            if (HttpContext.Request.Headers.TryGetValue("Authorization", out JWT))
-            {
-                //解密jwt
-                IJWTokenService ijwt = new JWTokenService();
-                result = ijwt.DecodeTokenData(JWT, tokenData);
-            }
-            else
-            {
-                result.message = "无法获取JWT加密字符串";
-            }
+        //private JWTDecryptData GetJWT(bool tokenData)
+        //{
+        //    JWTDecryptData result = new JWTDecryptData();
+        //    if (HttpContext.Request.Headers.TryGetValue("Authorization", out JWT))
+        //    {
+        //        //解密jwt
+        //        IJWTokenService ijwt = new JWTokenService();
+        //        result = ijwt.DecodeTokenData(JWT, tokenData);
+        //    }
+        //    else
+        //    {
+        //        result.message = "无法获取JWT加密字符串";
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
 
 
     }
