@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Extensions.DependencyInjection;
+using YSH.Framework.Attribute;
 using YXH.Entities.Entity;
 using YXH.Entities.IRepository;
 using YXH.Services.Dtos;
@@ -9,6 +11,7 @@ using YXH.Services.IServices;
 
 namespace YXH.Services.Services
 {
+    [ServiceType(ServiceLifetime.Transient, typeof(ITestService))]
     public class TestService : DisposeBase, ITestService
     {
         private readonly IScheduleRepository _ScheduleRepository;

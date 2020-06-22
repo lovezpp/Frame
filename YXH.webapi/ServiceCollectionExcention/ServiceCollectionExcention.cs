@@ -3,7 +3,9 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using YSH.Framework.Attribute;
 using YXH.Entities.IRepository;
 using YXH.Repository.DBContext;
 using YXH.Repository.Repository;
@@ -51,29 +53,46 @@ namespace YXH.webapi.ServiceCollectionExcention
 
         private static void AddService(this IServiceCollection services)
         {
-            var assemblyData = ((System.Type[])System.Reflection.Assembly.Load("YXH.Services").ExportedTypes).ToList();
-            var interfaceData = assemblyData.Where(a => a.Namespace == "YXH.Services.IServices").ToList();
-            var servicesData = assemblyData.Where(a => a.Namespace == "YXH.Services.Services" && a.Name != "DisposeBase").ToList();
-            foreach (var interfaceItem in interfaceData)
+            var assemblyData = ((System.Type[])System.Reflection.Assembly.Load("YXH.Services").ExportedTypes).Where(a=>a.IsDefined(typeof(ServiceTypeAttribute))).ToList();
+           
+            foreach (var item in assemblyData)
             {
-                var serviceItem = servicesData.Where(a => a.Name == interfaceItem.Name.Substring(1)).FirstOrDefault();
-                if (serviceItem != null)
+                var serviceTypeAttribute = item.GetCustomAttribute<ServiceTypeAttribute>();
+                switch (serviceTypeAttribute._serviceLifetime)
                 {
-                    services.AddTransient(interfaceItem, serviceItem);
+                    case ServiceLifetime.Transient:
+                        services.AddTransient(serviceTypeAttribute._interfaceType, item);
+                        break;
+                    case ServiceLifetime.Scoped:
+                        services.AddScoped(serviceTypeAttribute._interfaceType, item);
+                        break;
+                    case ServiceLifetime.Singleton:
+                        services.AddSingleton(serviceTypeAttribute._interfaceType, item);
+                        break;
+
                 }
             }
         }
 
         private static void AddRepository(this IServiceCollection services)
         {
-            var interfaceData = ((System.Type[])System.Reflection.Assembly.Load("YXH.Entities").ExportedTypes).Where(a => a.Namespace == "YXH.Entities.IRepository").ToList();
-            var servicesData = ((System.Type[])System.Reflection.Assembly.Load("YXH.Repository").ExportedTypes).Where(a => a.Namespace == "YXH.Repository.Repository").ToList();
-            foreach (var interfaceItem in interfaceData)
+            var assemblyData = ((System.Type[])System.Reflection.Assembly.Load("YXH.Repository").ExportedTypes).Where(a => a.IsDefined(typeof(ServiceTypeAttribute))).ToList();
+
+            foreach (var item in assemblyData)
             {
-                var serviceItem = servicesData.Where(a => a.Name == interfaceItem.Name.Substring(1)).FirstOrDefault();
-                if (serviceItem != null)
+                var serviceTypeAttribute = item.GetCustomAttribute<ServiceTypeAttribute>();
+                switch (serviceTypeAttribute._serviceLifetime)
                 {
-                    services.AddTransient(interfaceItem, serviceItem);
+                    case ServiceLifetime.Transient:
+                        services.AddTransient(serviceTypeAttribute._interfaceType, item);
+                        break;
+                    case ServiceLifetime.Scoped:
+                        services.AddScoped(serviceTypeAttribute._interfaceType, item);
+                        break;
+                    case ServiceLifetime.Singleton:
+                        services.AddSingleton(serviceTypeAttribute._interfaceType, item);
+                        break;
+
                 }
             }
         }

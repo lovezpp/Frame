@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\YSH.Framework\YSH.Framework.csproj" />
     <ProjectReference Include="..\YXH.Repository\YXH.Repository.csproj" />
   </ItemGroup>
 

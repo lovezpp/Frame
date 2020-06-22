@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\YSH.Framework\YSH.Framework.csproj" />
     <ProjectReference Include="..\YXH.Entities\YXH.Entities.csproj" />
   </ItemGroup>
 

@@ -12,7 +12,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using YXH.Repository.DBContext;
-using YXH.Services.AutoMap;
 using YXH.webapi.ServiceCollectionExcention;
 
 namespace YXH.webapi
@@ -39,7 +38,6 @@ namespace YXH.webapi
             services.AddDapperDBContext<MySqlDBContext,MySqlDBContextOptions>(options => options.Configuration = (Configuration.GetConnectionString("Gz_ShoppingMall20180521DBConnection")));
 
             services.IOC();
-            services.AddAutoMapper(typeof(Profiles).Assembly);
 
 
             services.AddCors(options =>
